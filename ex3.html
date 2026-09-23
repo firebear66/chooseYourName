@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Midnight Blue Jazz Night</title>
+    <style>
+        /* 基礎全站排版 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* 1. Header 區塊：桃紅/桃紫色背景與白字 */
+        header {
+            background-color: #d1476a; 
+            color: #ffffff;
+            padding: 25px;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0 0 5px 0;
+            font-size: 32px;
+            letter-spacing: 3px;
+        }
+        header .subtitle {
+            color: #ffdae0;
+            margin: 0 0 10px 0;
+            font-size: 16px;
+        }
+        header .meta-info {
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        /* 2. 置中的海報圖片區塊 */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .poster-img {
+            width: 400px; /* 調整為適合此橫式海報的寬度 */
+            height: auto;
+            display: inline-block;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            border-radius: 4px;
+        }
+        .image-hint {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* 3 & 7. 2×2 四宮格版面佈局 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0px;
+            margin: 30px 0;
+        }
+
+        .section-box {
+            padding: 25px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .section-box h2 {
+            margin-top: 0;
+            font-size: 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding-bottom: 8px;
+            margin-bottom: 0px;
+        }
+        /* 各區塊專屬顏色設定 */
+        /* 區塊 A：About the Night (淺粉/淺肉色底) */
+        .box-about {
+            background-color: #fbebe8;
+            color: #4a1525;
+        }
+        /* 區塊 B：Night Highlights (深藍底白字) */
+        .box-highlights {
+            background-color: #1a365d;
+            color: #ffffff;
+        }
+        .box-highlights h2 {
+            color: #ffffff;
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+        /* 區塊 C：Tonight's Program (淡粉紫底) */
+        .box-program {
+            background-color: #f9eef0;
+            color: #333333;
+        }
+        /* 區塊 D：Tickets (中深藍底白字) */
+        .box-tickets {
+            background-color: #2b5c8f;
+            color: #ffffff;
+        }
+        .box-tickets h2 {
+            color: #ffffff;
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+
+        /* 5. 語意化標籤與重要資訊樣式 */
+        strong { font-weight: bold; }
+        del { color: #888888; text-decoration: line-through; }
+        dal { color: #b33654; text-decoration: line-through; }
+        ins { color: #b33654; text-decoration: none; font-weight: bold; }
+        ind { color: gold; text-decoration: none; font-weight: bold; }
+
+        /* 4. 底部 Contact Us 聯絡區塊 (桃紅底白字) */
+        footer {
+            background-color: #d1476a;
+            color: #ffffff;
+            padding: 25px;
+            text-align: center;
+            border-radius: 4px;
+            margin-top: -30px;
+        }
+        footer h2 {
+            margin-top: 0;
+            color: #ffffff;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        footer a:link, footer a:visited {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* 8. 第二張圖片的 CSS 連結偽類設定 */
+        a:link {
+            color: green;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<!-- 1. Header 區塊 -->
+    <header>
+        <h1>MIDNIGHT BLUE</h1>
+        <div class="subtitle">A Night of Jazz, Rhythm & Dance</div>
+        <div class="meta-info"><dal>Saturday, October 10, 2026</dal></div>
+        <div class="meta-info">7:30 PM - 10:30 PM · Taipei</div>
+    </header>
+
+    <!-- 2. 置中可點擊的海報圖片（已更新為您指定的新圖片網址，並可使用 a href 點開） -->
+    <div class="image-container">
+        <a href="https://www.youtube.com/watch?v=1Nt1PkfnSMI" target="_blank">
+            <img class="poster-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-NjvHK6vtMS2tQX_jlB0Du7hxZZErUM_yUdJ00rs7U3TZZaPRfLgnPt2zFQ&s" alt="Midnight Blue Jazz Night Poster">
+        </a>
+        <div class="image-hint">Click the image to visit the event website.</div>
+    </div>
+
+    <!-- 3 & 6 & 7. 2×2 四宮格區域 -->
+    <div class="grid-container">
+        
+        <!-- 區塊一：About the Night -->
+        <div class="section-box box-about">
+            <h2><ins>About the Night</ins></h2>
+            <p>Welcome to <ins>Midnight Blue</ins>, a night inspired by classic jazz clubs and social dancing. Expect live music, meet new people, and spend the evening dancing to swing, jazz, and rhythm & blues. "Good music. Good people. Our unforgettable night."</p>
+        </div>
+
+        <!-- 區塊二：Night Highlights -->
+        <div class="section-box box-highlights">
+            <h2><ind>Night Highlights</ind></h2>
+            <p><strong><ind>LIVE BAND</ind></strong><br>The Blue Notes Quartet</p>
+            <p><strong><ind>SOCIAL DANCE</ind></strong><br>An open dance floor for everyone.</p>
+            <p><strong><ind>DRESS UP</ind></strong><br>Vintage style is encouraged, but not required.<br>Music starts at 8:00 PM.</p>
+        </div>
+        <!-- 區塊三：Tonight's Program -->
+        <div class="section-box box-program">
+            <h2>Tonight's Program</h2>
+            <p><ins>7:30 PM</ins> - Doors Open<br>
+               <ins>8:00 PM</ins> - Live Jazz Set<br>
+               <ins>9:00 PM</ins> - Social Dance<br>
+               <ins>10:00 PM</ins> - R&B & Blues Jam</p>
+            <p><strong>Schedule Update:</strong><br>
+                <dal><ins>Doors now open at 8:00 PM</ins></dal><br>
+               Doors now open at <ins>7:30 PM</ins></p>
+        </div>
+
+        <!-- 區塊四：Tickets -->
+        <div class="section-box box-tickets">
+            <h2><ind>Tickets</ind></h2>
+            <p>Early Bird: <del>$800</del><br>
+                <ind>Special Price: <strong>NT$600</strong></ind></p>
+            <p><strong>Your ticket includes:</strong><br>
+               Live music + Social dance + Welcome drink</p>
+            <p>Only <ind>80 tickets</ind> are available.<br>
+               <a href="https://w3schools.com" target="_blank">Reserve Your Ticket</a></p>
+        </div>
+
+    </div>
+
+    <!-- 4. 底部 Contact Us -->
+    <footer>
+        <h2><ind>Contact Us</ind></h2>
+        <p>Midnight Blue Jazz Club</p>
+        <p>88 Blue Note Lane, Taipei</p>
+        <p><ind>Email: info@midnightblue.com | Tel: +886-2-2345-6789</ind></p>
+    </footer>
+
+</body>
+</html>
